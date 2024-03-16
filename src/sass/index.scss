@@ -1,2 +1,15 @@
-
-// @import './base-styles/common.scss';
+@import "./base/base.scss";
+@import "./base/reset.scss";
+@import "./base/vars.scss";
+@import "./sections/header.scss";
+@import "./sections/birthday.scss";
+@import "./sections/guess-number.scss";
+@import "./sections/rock-paper-scissors.scss";
+@import "./sections/calculator.scss";
+@import "./sections/time-calculator.scss";
+@import "./sections/dinosaur.scss";
+@import "./sections/soccer.scss";
+@import "./sections/biggest-number.scss";
+@import "./sections/team.scss";
+@import "./sections/scientists.scss";
+@import "./sections/footer.scss";
