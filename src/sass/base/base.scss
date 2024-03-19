@@ -8,9 +8,14 @@ body {
 
 .container {
   width: 1090px;
-//   height: 3202px;
-  padding: 36px 86px 0px 86px;
+  //   height: 3202px;
+  padding: 0px 257px 0px 257px;
   margin-left: auto;
   margin-right: auto;
   background: #fff;
+}
+
+ul {
+  display: flex;
+  list-style: none;
 }

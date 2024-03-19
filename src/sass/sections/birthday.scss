@@ -1,0 +1,50 @@
+.birthday {
+  padding-top: 36px;
+}
+
+.games__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 36px;
+  border-bottom: #000 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.birthday__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.birthday__input {
+  position: relative;
+  padding: 10px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+  margin-right: 149px;
+}
+
+.birthday__input::placeholder {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+// .birthday__btn {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
