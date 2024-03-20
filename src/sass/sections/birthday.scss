@@ -48,3 +48,20 @@
 //   top: 0;
 //   right: 0;
 // }
+
+.birthday__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.birthday__text {
+  color: #039900;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

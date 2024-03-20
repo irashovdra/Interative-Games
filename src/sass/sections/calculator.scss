@@ -1,0 +1,110 @@
+.calculator__title {
+  padding-top: 36px;
+  border-top: 1px solid #000;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator__number1 {
+  border-radius: 20px;
+  background: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+}
+
+.calculator__number1::placeholder {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 38px;
+}
+
+.calculator-list {
+  gap: 10px;
+  max-width: 63px;
+  flex-wrap: wrap;
+  margin-right: 38px;
+  margin-left: 38px;
+}
+
+.calculator-list__btn {
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 10px;
+}
+
+.calculator__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.calculator__number2 {
+  border-radius: 20px;
+  background: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  margin-right: 38px;
+}
+
+.calculator__number2::placeholder {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 38px;
+}
+
+.calculator__btn {
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 10px;
+  margin-right: 38px;
+}
+
+.calculator__result {
+  border-radius: 20px;
+  background: #d7d7d7;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  margin-right: 33px;
+}
+
+.calculator__result::placeholder {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 38px;
+}
+
