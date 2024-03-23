@@ -1,0 +1,49 @@
+.team__title {
+  padding-top: 36px;
+  border-top: 1px solid #000;
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: #d9d9d9;
+  margin-bottom: 20px;
+}
+
+.team__name {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.team__info {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.team__slides {
+  margin-bottom: 36px;
+}
