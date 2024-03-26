@@ -35,6 +35,15 @@
   margin-right: 149px;
 }
 
+.birthday__btn {
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+  padding: 10px;
+}
+
 .birthday__input::placeholder {
   color: #7e7e7e;
   font-family: "Montserrat Alternates";
@@ -42,12 +51,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
-// .birthday__btn {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-// }
 
 .birthday__flex {
   display: flex;
