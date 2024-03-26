@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
+    
+    <script type="module" crossorigin src="/interactive-games/assets/index-a5aef8ee.js"></script>
+    <link rel="stylesheet" href="/interactive-games/assets/index-c4d81f6b.css">
+  </head>
+  <body>
+    <header class="header">
+  <a href="/" class="header__logo"
+    ><img
+      src="../images/logo.webp"
+      alt="logo"
+      class="header__img"
+  /></a>
+  <ul class="header-list">
+    <li class="header-list__item">
+      <a href="" class="header-list__link">Інтерактив</a>
+    </li>
+    <li class="header-list__item">
+      <a href="" class="header-list__link">Наша команда</a>
+    </li>
+    <li class="header-list__item">
+      <a href="" class="header-list__link">Контакти</a>
+    </li>
+  </ul>
+  <button class="header__btn"></button>
+  <h2 class="header__text">Вітаємо, User</h2>
+</header>
+
+    <main>
+      <section class="birthday">
+  <div class="container">
+    <h1 class="games__title">Популярні інтерактивні ігри</h1>
+    <h2 class="birthday__title">Перевір в який рік ти народився</h2>
+    <div class="birthday__flex">
+      <input
+        class="birthday__input"
+        type="text"
+        placeholder="Введіть рік народження"
+      />
+      <button class="birthday__btn">
+        <svg
+          class="birthday__icon"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="6.52174"
+            cy="6.52174"
+            r="5.52174"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+      <p class="birthday__text">Ви народилися у високосний рік!</p>
+    </div>
+  </div>
+</section>
+
+      <section class="guess-number">
+  <div class="container">
+    <h2 class="guess-number__title">Вгадай число, яке загадав комп’ютер</h2>
+    <div class="guess-number__flex">
+      <input
+        class="guess-number__input"
+        type="text"
+        placeholder="Введіть число"
+      />
+      <button class="guess-number__btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <circle
+            cx="6.52174"
+            cy="6.52174"
+            r="5.52174"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34665 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+      <p class="guess-number__greetings">Вітаю, ви вгадали число!(number)</p>
+    </div>
+  </div>
+</section>
+
+      <section class="rock-paper-scissors">
+  <div class="container">
+    <h2 class="rock-paper-scissors__title">Камінь - ножиці - папір</h2>
+    <div class="rock-paper-scissors__flex">
+      <ul class="rock-paper-scissors-list">
+        <li class="rock-paper-scissors-list__item">
+          <button class="rock-paper-scissors-list__btn">
+            <img
+              src="../images/rock.webp"
+              alt="rock"
+              class="rock-paper-scissors-list__img"
+            />
+          </button>
+        </li>
+        <li class="rock-paper-scissors-list__item">
+          <button class="rock-paper-scissors-list__btn">
+            <img
+              src="../images/paper.webp"
+              alt="paper"
+              class="rock-paper-scissors-list__img"
+            />
+          </button>
+        </li>
+        <li class="rock-paper-scissors-list__item">
+          <button class="rock-paper-scissors-list__btn">
+            <img
+              src="../images/scissors.webp"
+              alt="scissors"
+              class="rock-paper-scissors-list__img"
+            />
+          </button>
+        </li>
+      </ul>
+      <p class="rock-paper-scissors__count">Рахунок:</p>
+    </div>
+    <p class="rock-paper-scissors__text">Ви виграли раунд!</p>
+    <button class="rock-paper-scissors__btn">Варіант комп’ютера</button>
+  </div>
+</section>
+
+      <section class="calculator">
+  <div class="container">
+    <h2 class="calculator__title">Калькулятор</h2>
+    <div class="calculator__flex">
+      <input
+        placeholder="Введіть число"
+        type="text"
+        class="calculator__number1"
+      />
+      <ul class="calculator-list">
+        <li class="calculator-list__item">
+          <button class="calculator-list__btn">+</button>
+        </li>
+        <li class="calculator-list__item">
+          <button class="calculator-list__btn">*</button>
+        </li>
+        <li class="calculator-list__item">
+          <button class="calculator-list__btn">-</button>
+        </li>
+        <li class="calculator-list__item">
+          <button class="calculator-list__btn">/</button>
+        </li>
+      </ul>
+      <input
+        placeholder="Введіть число"
+        type="text"
+        class="calculator__number2"
+      />
+      <button class="calculator__btn">=</button>
+      <input placeholder="Результат" type="text" class="calculator__result" />
+    </div>
+  </div>
+</section>
+
+      <section class="time-calculator">
+  <div class="container">
+    <h2 class="time-calculator__title">Калькулятор часу</h2>
+    <div class="time-calculator__flex">
+      <input
+        class="time-calculator__input"
+        type="text"
+        placeholder="Введіть число"
+      />
+      <button class="time-calculator__btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <circle
+            cx="6.52174"
+            cy="6.52174"
+            r="5.52174"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+      <svg
+        class="time-calculator__icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="100"
+        height="2"
+        viewBox="0 0 100 2"
+        fill="none"
+      >
+        <path d="M0 1H100" stroke="black" stroke-dasharray="2 2" />
+      </svg>
+      <p class="time-calculator__result">Результат</p>
+    </div>
+  </div>
+</section>
+
+      <section class="dinosaur">
+  <div class="container">
+    <h2 class="dinosaur__title">Google динозавр</h2>
+    <img class="dinosaur__img" width="80" height="80" src="../images/dino.webp" alt="dino" />
+  </div>
+</section>
+
+      <section class="soccer">
+  <div class="container">
+    <h2 class="soccer__title">Футбол</h2>
+    <div class="soccer__field">
+      <img
+        width="50"
+        height="50"
+        src="../images/ball.webp"
+        alt="ball"
+        class="soccer__ball"
+      />
+      <svg class="soccer__pointer"></svg>
+    </div>
+  </div>
+</section>
+
+      <section class="biggest-number">
+  <div class="container">
+    <h2 class="biggest-number__title">Введіть 3 числа</h2>
+    <ul class="biggest-number-list">
+      <li class="biggest-number-list__item">
+        <input
+          placeholder="Введіть число"
+          type="text"
+          class="biggest-number-list__input"
+        />
+      </li>
+      <li class="biggest-number-list__item">
+        <input
+          placeholder="Введіть число"
+          type="text"
+          class="biggest-number-list__input"
+        />
+      </li>
+      <li class="biggest-number-list__item">
+        <input
+          placeholder="Введіть число"
+          type="text"
+          class="biggest-number-list__input"
+        />
+      </li>
+    </ul>
+    <p class="biggest-number__result">
+      Найбільше число, яке ви ввели - (число)
+    </p>
+  </div>
+</section>
+
+      <section class="team">
+  <div class="container">
+    <h2 class="team__title">Наша команда</h2>
+    <!-- СЛАЙДЕР -->
+    <div class="slider">
+      <img src="#" alt="my photo" class="team__img" />
+      <h3 class="team__name">Ірина</h3>
+      <p class="team__info">Team-lead</p>
+      <svg class="team__slides" xmlns="http://www.w3.org/2000/svg" width="174" height="3" viewBox="0 0 174 3" fill="none">
+<rect width="30" height="3" rx="1.5" fill="#797979"/>
+<rect x="36" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+<rect x="60" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+<rect x="84" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+<rect x="108" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+<rect x="132" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+<rect x="156" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
+</svg>
+    </div>
+  </div>
+</section>
+
+      <section class="scientists">
+  <div class="container">
+    <h2 class="scientists__title">Обери вченого/их</h2>
+    <ul class="scientists-photos">
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+      <li class="scientists-photos__item">
+        <img src="#" alt="" class="scientists-photos__img" />
+      </li>
+    </ul>
+    <ul class="scientists-conditions">
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Які вчені народилися в 19 ст.
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Знайти рік народження Albert Einshtein
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Відсортувати вчених за алфавітом
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Знайти вчених, прізвища яких починаються на на літеру “С”
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Відсортувати вчених за кількістю прожитих років
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Видалити всіх вчених, ім’я яких починається на “А”
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Знайти вченого, який народився найпізніше
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Знайти вченого, який прожив найдовше і вченого, <br>який прожив найменше
+        </button>
+      </li>
+      <li class="scientists-conditions__item">
+        <button class="scientists-conditions__btn">
+          Знайти вчених, в яких співпадають перші літери імені і прізвища
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__flex">
+      <a href="/" class="footer__logo"
+        ><img
+          width="165"
+          height="70"
+          src="../images/logo.webp"
+          alt="logo"
+          class="header__img"
+      /></a>
+      <ul class="footer-contacts">
+        <li class="footer-contacts__item">Тел: +38 (123) 456 78 90</li>
+        <li class="footer-contacts__item">E-Mail: codingmagic@gmail.com</li>
+        <li class="footer-contacts__item">Facebook: CodingMagic</li>
+        <li class="footer-contacts__item">Twitter: CodingMagic</li>
+        <li class="footer-contacts__item">Instagram: CodingMagic</li>
+      </ul>
+      <div class="footer__subscribe">
+        <input
+          placeholder="Ваша ел. адреса..."
+          type="text"
+          class="footer__input"
+        />
+        <button class="footer__btn" type="submit">Підписатись</button>
+
+        <p class="footer__text">
+          *Підписавшись, Ви зможете ортимувати інформацію про новинки на сайті
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </body>
+</html>
