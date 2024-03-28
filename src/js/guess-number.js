@@ -3,7 +3,8 @@ const guessNumberResult = document.querySelector(".guess-number__result");
 const computerNumber = Math.round(Math.random() * (10 - 1) + 1);
 console.log(computerNumber);
 
-guessNumberBtn.addEventListener("click", () => {
+guessNumberBtn.addEventListener("click", (event) => {
+  event.preventDefault();
   const guessNumberInput = document.querySelector(".guess-number__input");
   const personNumber = Number(guessNumberInput.value);
   guessNumberResult.style.opacity = 1;

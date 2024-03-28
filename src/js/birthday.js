@@ -3,7 +3,8 @@ const birthdayResult = document.querySelector(".birthday__text");
 const birthdayBtn = document.querySelector(".birthday__btn");
 // birthdayInput.addEventListener("input", (event) => {
 //   const birthdayYear = event.target.value;
-birthdayBtn.addEventListener("click", () => {
+birthdayBtn.addEventListener("click", (event) => {
+  event.preventDefault();
   birthdayResult.style.opacity = 1;
   if (
     birthdayInput.value % 4 === 0 &&
