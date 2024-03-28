@@ -36,24 +36,21 @@ scissors.addEventListener("click", () => {
 
 function playRound(playerChoice) {
   const computerChoice = computerMove();
-
-  let resultMessage = "";
-
+  rockPaperScissorsMessage.style.opacity = "1";
   if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
   ) {
     playerResult++;
-    resultMessage = "Ви виграли раунд!";
+    rockPaperScissorsMessage.textContent = "Ви виграли раунд!";
   } else if (playerChoice !== computerChoice) {
     computerResult++;
-    resultMessage = "Комп’ютер виграв раунд!";
+    rockPaperScissorsMessage.textContent = "Комп’ютер виграв раунд!";
+    rockPaperScissorsMessage.style.color = "#900";
   } else {
-    resultMessage = "Раунд закінчився внічию!";
+    rockPaperScissorsMessage.textContent = "Раунд закінчився внічию!";
   }
-
-  rockPaperScissorsMessage.textContent = resultMessage;
 
   updateScore();
 }
