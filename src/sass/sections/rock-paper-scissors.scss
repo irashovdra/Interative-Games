@@ -1,5 +1,3 @@
-
-
 .rock-paper-scissors__title {
   padding-top: 36px;
   border-top: 1px solid #000;
@@ -17,6 +15,7 @@
 .rock-paper-scissors-list {
   gap: 38px;
   justify-content: center;
+  align-items: center;
 }
 
 .rock-paper-scissors-list__btn {
@@ -24,10 +23,10 @@
   background: #000;
   width: 60px;
   height: 60px;
-  margin-bottom: 36px;
 }
 
 .rock-paper-scissors__text {
+  opacity: 0;
   color: #039900;
   font-size: 12px;
   font-style: normal;
@@ -43,9 +42,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 36px;
 }
 
 .rock-paper-scissors__count {
+  margin-left: 104px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.rock-paper-scissors__player {
+  margin-left: 104px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.rock-paper-scissors__computer {
   margin-left: 104px;
   color: #000;
   font-size: 12px;
@@ -66,4 +84,9 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
+}
+
+.rock-paper-scissors__count-flex {
+  display: flex;
+  flex-direction: column;
 }
