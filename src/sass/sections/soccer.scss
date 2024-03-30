@@ -1,5 +1,3 @@
-
-
 .soccer__title {
   padding-top: 36px;
   border-top: 1px solid #000;
@@ -16,19 +14,24 @@
 }
 
 .soccer__field {
-  width: 720px;
-  height: 220px;
+  background-image: url(../../images/soccer-field.jpg);
+  background-size: 104%;
+  background-position: center;
+  width: 700px;
+  height: 320px;
   border-radius: 37px;
   border: 2px solid #000;
-  background: #5abb58;
   display: flex;
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .soccer__ball {
   position: absolute;
   top: 85px;
   left: 92px;
+  transition: all 1s;
 }
