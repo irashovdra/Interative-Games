@@ -10,4 +10,5 @@ import "./js/biggest-number.js";
 import "./js/team.js";
 import "./js/scientists.js";
 import "./js/footer.js";
+import "./js/interactive-modal.js";
 import "./js/footer-modal.js";
