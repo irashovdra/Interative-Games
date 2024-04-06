@@ -47,8 +47,8 @@
 .footer__subscribe {
   display: flex;
   //   flex-direction: column;
-  flex-wrap: wrap;
   width: 357px;
+  align-items: center;
 }
 
 .footer__text {
@@ -57,4 +57,9 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 18px;
+}
+
+.footer__subscribe-flex {
+  display: flex;
+  flex-direction: column;
 }

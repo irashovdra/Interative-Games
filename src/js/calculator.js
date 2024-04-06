@@ -31,7 +31,7 @@ equal.addEventListener("click", () => {
   const calculatorSecondNumber = parseFloat(calculatorSecondInput.value);
   if (chosenSymbol === "+") {
     calculatorResult = calculatorFirstNumber + calculatorSecondNumber;
-    calculatorResultText.textContent = `Сума чисел a і b = ${calculatorResult}`;
+    calculatorResultText.textContent = `${calculatorResult}`;
   } else if (chosenSymbol === "-") {
     calculatorResult = calculatorFirstNumber - calculatorSecondNumber;
     calculatorResultText.textContent = `Різниця чисел a і b = ${calculatorResult}`;
