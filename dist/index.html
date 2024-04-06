@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -17,30 +23,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     
     
-    <script type="module" crossorigin src="/interactive-games/assets/index-a5aef8ee.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-c4d81f6b.css">
+    <script type="module" crossorigin src="/interactive-games/assets/index-7402590b.js"></script>
+    <link rel="stylesheet" href="/interactive-games/assets/index-481e25d6.css">
   </head>
   <body>
     <header class="header">
   <a href="/" class="header__logo"
-    ><img
-      src="../images/logo.webp"
-      alt="logo"
-      class="header__img"
+    ><img src="../images/logo.webp" alt="logo" class="header__img"
   /></a>
   <ul class="header-list">
     <li class="header-list__item">
-      <a href="" class="header-list__link">Інтерактив</a>
+      <button type="button" class="header__interactive-btn">
+        <a href="#" class="header-list__link">Інтерактив</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="11"
+          height="7"
+          viewBox="0 0 11 7"
+          fill="none"
+        >
+          <path
+            d="M10 1L5.5 6L1 1"
+            stroke="black"
+            stroke-width="0.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </li>
     <li class="header-list__item">
-      <a href="" class="header-list__link">Наша команда</a>
+      <a href="#team" class="header-list__link">Наша команда</a>
     </li>
     <li class="header-list__item">
-      <a href="" class="header-list__link">Контакти</a>
+      <a href="#contacts" class="header-list__link">Контакти</a>
     </li>
   </ul>
-  <button class="header__btn"></button>
-  <h2 class="header__text">Вітаємо, User</h2>
+  <h2 class="header__text">Вітаємо, <span class="header__user">User</span></h2>
 </header>
 
     <main>
@@ -49,12 +68,14 @@
     <h1 class="games__title">Популярні інтерактивні ігри</h1>
     <h2 class="birthday__title">Перевір в який рік ти народився</h2>
     <div class="birthday__flex">
+      <form class="birthday__form">
       <input
         class="birthday__input"
         type="text"
         placeholder="Введіть рік народження"
       />
-      <button class="birthday__btn">
+      <button class="birthday__btn" type="submit">
+      </form>
         <svg
           class="birthday__icon"
           width="16"
@@ -85,33 +106,35 @@
   <div class="container">
     <h2 class="guess-number__title">Вгадай число, яке загадав комп’ютер</h2>
     <div class="guess-number__flex">
-      <input
-        class="guess-number__input"
-        type="text"
-        placeholder="Введіть число"
-      />
-      <button class="guess-number__btn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-        >
-          <circle
-            cx="6.52174"
-            cy="6.52174"
-            r="5.52174"
-            stroke="white"
-            stroke-width="2"
-          />
-          <path
-            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34665 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-            fill="white"
-          />
-        </svg>
-      </button>
-      <p class="guess-number__greetings">Вітаю, ви вгадали число!(number)</p>
+      <form class="guess-number__form">
+        <input
+          class="guess-number__input"
+          type="text"
+          placeholder="Введіть число"
+        />
+        <button class="guess-number__btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <circle
+              cx="6.52174"
+              cy="6.52174"
+              r="5.52174"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34665 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </form>
+      <p class="guess-number__result">Вітаю, ви вгадали число!(number)</p>
     </div>
   </div>
 </section>
@@ -121,7 +144,7 @@
     <h2 class="rock-paper-scissors__title">Камінь - ножиці - папір</h2>
     <div class="rock-paper-scissors__flex">
       <ul class="rock-paper-scissors-list">
-        <li class="rock-paper-scissors-list__item">
+        <li class="rock-paper-scissors-list__item rock">
           <button class="rock-paper-scissors-list__btn">
             <img
               src="../images/rock.webp"
@@ -130,7 +153,7 @@
             />
           </button>
         </li>
-        <li class="rock-paper-scissors-list__item">
+        <li class="rock-paper-scissors-list__item paper">
           <button class="rock-paper-scissors-list__btn">
             <img
               src="../images/paper.webp"
@@ -139,7 +162,7 @@
             />
           </button>
         </li>
-        <li class="rock-paper-scissors-list__item">
+        <li class="rock-paper-scissors-list__item scissors">
           <button class="rock-paper-scissors-list__btn">
             <img
               src="../images/scissors.webp"
@@ -149,7 +172,11 @@
           </button>
         </li>
       </ul>
-      <p class="rock-paper-scissors__count">Рахунок:</p>
+      <div class="rock-paper-scissors__count-flex">
+        <p class="rock-paper-scissors__count">Рахунок:</p>
+        <p class="rock-paper-scissors__player">Ви:</p>
+        <p class="rock-paper-scissors__computer">Комп’ютер:</p>
+      </div>
     </div>
     <p class="rock-paper-scissors__text">Ви виграли раунд!</p>
     <button class="rock-paper-scissors__btn">Варіант комп’ютера</button>
@@ -167,16 +194,16 @@
       />
       <ul class="calculator-list">
         <li class="calculator-list__item">
-          <button class="calculator-list__btn">+</button>
+          <button type="button" class="calculator-list__btn plus">+</button>
         </li>
         <li class="calculator-list__item">
-          <button class="calculator-list__btn">*</button>
+          <button type="button" class="calculator-list__btn multiply">*</button>
         </li>
         <li class="calculator-list__item">
-          <button class="calculator-list__btn">-</button>
+          <button type="button" class="calculator-list__btn minus">-</button>
         </li>
         <li class="calculator-list__item">
-          <button class="calculator-list__btn">/</button>
+          <button type="button" class="calculator-list__btn divide">/</button>
         </li>
       </ul>
       <input
@@ -185,7 +212,7 @@
         class="calculator__number2"
       />
       <button class="calculator__btn">=</button>
-      <input placeholder="Результат" type="text" class="calculator__result" />
+      <p class="calculator__result">Результат</p>
     </div>
   </div>
 </section>
@@ -194,32 +221,34 @@
   <div class="container">
     <h2 class="time-calculator__title">Калькулятор часу</h2>
     <div class="time-calculator__flex">
-      <input
-        class="time-calculator__input"
-        type="text"
-        placeholder="Введіть число"
-      />
-      <button class="time-calculator__btn">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-        >
-          <circle
-            cx="6.52174"
-            cy="6.52174"
-            r="5.52174"
-            stroke="white"
-            stroke-width="2"
-          />
-          <path
-            d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
-            fill="white"
-          />
-        </svg>
-      </button>
+      <form class="time-calculator__form">
+        <input
+          class="time-calculator__input"
+          type="text"
+          placeholder="Введіть число"
+        />
+        <button class="time-calculator__btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <circle
+              cx="6.52174"
+              cy="6.52174"
+              r="5.52174"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </form>
       <svg
         class="time-calculator__icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -266,21 +295,21 @@
         <input
           placeholder="Введіть число"
           type="text"
-          class="biggest-number-list__input"
+          class="biggest-number-list__input input1"
         />
       </li>
       <li class="biggest-number-list__item">
         <input
           placeholder="Введіть число"
           type="text"
-          class="biggest-number-list__input"
+          class="biggest-number-list__input input2"
         />
       </li>
       <li class="biggest-number-list__item">
         <input
           placeholder="Введіть число"
           type="text"
-          class="biggest-number-list__input"
+          class="biggest-number-list__input input3"
         />
       </li>
     </ul>
@@ -290,111 +319,177 @@
   </div>
 </section>
 
-      <section class="team">
+      <section class="team" id="team">
   <div class="container">
     <h2 class="team__title">Наша команда</h2>
     <!-- СЛАЙДЕР -->
     <div class="slider">
-      <img src="#" alt="my photo" class="team__img" />
-      <h3 class="team__name">Ірина</h3>
-      <p class="team__info">Team-lead</p>
-      <svg class="team__slides" xmlns="http://www.w3.org/2000/svg" width="174" height="3" viewBox="0 0 174 3" fill="none">
-<rect width="30" height="3" rx="1.5" fill="#797979"/>
-<rect x="36" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
-<rect x="60" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
-<rect x="84" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
-<rect x="108" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
-<rect x="132" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
-<rect x="156" width="18" height="3" rx="1.5" fill="#D9D9D9"/>
-</svg>
+      <button type="button" class="slider__btn-backward">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="52"
+          height="102"
+          viewBox="0 0 52 102"
+          fill="none"
+        >
+          <path d="M51 1L1 51L51 101" stroke="black" />
+        </svg>
+      </button>
+      <ul class="slider-list">
+        <li class="slider-list__item slide1">
+          <img src="#" alt="my photo" class="team__img" />
+          <h3 class="team__name">Ірина</h3>
+          <p class="team__info">Team-lead 1</p>
+        </li>
+        <li class="slider-list__item slide2">
+          <img src="#" alt="my photo" class="team__img" />
+          <h3 class="team__name">Ірина</h3>
+          <p class="team__info">Team-lead 2</p>
+        </li>
+        <li class="slider-list__item slide3">
+          <img src="#" alt="my photo" class="team__img" />
+          <h3 class="team__name">Ірина</h3>
+          <p class="team__info">Team-lead 3</p>
+        </li>
+      </ul>
+      <button type="button" class="slider__btn-forward">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="52"
+          height="102"
+          viewBox="0 0 52 102"
+          fill="none"
+        >
+          <path d="M1 1L51 51L1 101" stroke="black" />
+        </svg>
+      </button>
     </div>
+    <svg
+      class="team__slides"
+      xmlns="http://www.w3.org/2000/svg"
+      width="78"
+      height="3"
+      viewBox="0 0 78 3"
+      fill="none"
+    >
+      <rect class="rect1" width="30" height="3" rx="1.5" fill="#797979" />
+      <rect
+        class="rect2"
+        x="36"
+        width="18"
+        height="3"
+        rx="1.5"
+        fill="#D9D9D9"
+      />
+      <rect
+        class="rect3"
+        x="60"
+        width="18"
+        height="3"
+        rx="1.5"
+        fill="#D9D9D9"
+      />
+    </svg>
   </div>
 </section>
 
       <section class="scientists">
   <div class="container">
     <h2 class="scientists__title">Обери вченого/их</h2>
-    <ul class="scientists-photos">
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+    <ul class="scientists-list">
+      <li class="scientists-list__item albert">
+        <h3 class="scientists-list__name albert-name">Albert Einstein</h3>
+        <p class="scientists-list__age albert-age">1879-1955</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item isaac">
+        <h3 class="scientists-list__name isaac-name">Isaac Newton</h3>
+        <p class="scientists-list__age isaac-age">1643-1727</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item galileo">
+        <h3 class="scientists-list__name galileo-name">Galileo Galilei</h3>
+        <p class="scientists-list__age galileo-age">1564-1642</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item marie">
+        <h3 class="scientists-list__name marie-name">Marie Curie</h3>
+        <p class="scientists-list__age marie-age">1867-1934</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item johannes">
+        <h3 class="scientists-list__name johannes-name">Johannes Kepler</h3>
+        <p class="scientists-list__age johannes-age">1571-1630</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item nicolaus">
+        <h3 class="scientists-list__name nicolaus-name">Nicolaus Copernicus</h3>
+        <p class="scientists-list__age nicolaus-age">1473-1543</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item max">
+        <h3 class="scientists-list__name max-name">Max Planck</h3>
+        <p class="scientists-list__age max-age">1858-1947</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item kate">
+        <h3 class="scientists-list__name kate-name">Katherine Blodgett</h3>
+        <p class="scientists-list__age kate-age">1898-1979</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item ada">
+        <h3 class="scientists-list__name ada-name">Ada Lovelace</h3>
+        <p class="scientists-list__age ada-age">1815-1852</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item sarah">
+        <h3 class="scientists-list__name sarah-name">Sarah E. Goode</h3>
+        <p class="scientists-list__age sarah-age">1855-1905</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item lise">
+        <h3 class="scientists-list__name lise-name">Lise Meitner</h3>
+        <p class="scientists-list__age lise-age">1878-1968</p>
       </li>
-      <li class="scientists-photos__item">
-        <img src="#" alt="" class="scientists-photos__img" />
+      <li class="scientists-list__item hanna">
+        <h3 class="scientists-list__name hanna-name">Hanna Hammarström</h3>
+        <p class="scientists-list__age hanna-age">1829-1909</p>
       </li>
     </ul>
     <ul class="scientists-conditions">
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn born19century">
           Які вчені народилися в 19 ст.
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn find-albert-age">
           Знайти рік народження Albert Einshtein
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn scientists-alphabet">
           Відсортувати вчених за алфавітом
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn find-c-surnames">
           Знайти вчених, прізвища яких починаються на на літеру “С”
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn scientists-sort-by-age">
           Відсортувати вчених за кількістю прожитих років
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn delete-a-names">
           Видалити всіх вчених, ім’я яких починається на “А”
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn born-latest">
           Знайти вченого, який народився найпізніше
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
-          Знайти вченого, який прожив найдовше і вченого, <br>який прожив найменше
+        <button class="scientists-conditions__btn longest-shortest-lives">
+          Знайти вченого, який прожив найдовше і вченого, <br />який прожив
+          найменше
         </button>
       </li>
       <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn">
+        <button class="scientists-conditions__btn matching-initials">
           Знайти вчених, в яких співпадають перші літери імені і прізвища
         </button>
       </li>
@@ -414,21 +509,24 @@
           alt="logo"
           class="header__img"
       /></a>
-      <ul class="footer-contacts">
+      <ul class="footer-contacts" id="contacts">
         <li class="footer-contacts__item">Тел: +38 (123) 456 78 90</li>
         <li class="footer-contacts__item">E-Mail: codingmagic@gmail.com</li>
         <li class="footer-contacts__item">Facebook: CodingMagic</li>
         <li class="footer-contacts__item">Twitter: CodingMagic</li>
         <li class="footer-contacts__item">Instagram: CodingMagic</li>
       </ul>
-      <div class="footer__subscribe">
-        <input
-          placeholder="Ваша ел. адреса..."
-          type="text"
-          class="footer__input"
-        />
-        <button class="footer__btn" type="submit">Підписатись</button>
-
+      <div class="footer__subscribe-flex">
+        <form class="footer__subscribe">
+          <input
+            name="email"
+            required
+            placeholder="Ваша ел. адреса..."
+            type="email"
+            class="footer__input"
+          />
+          <button class="footer__btn" type="submit">Підписатись</button>
+        </form>
         <p class="footer__text">
           *Підписавшись, Ви зможете ортимувати інформацію про новинки на сайті
         </p>
@@ -437,17 +535,67 @@
   </div>
 </footer>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <div class="interactive-modal">
+  <!-- <div class="backdrop"></div> -->
+  <ul class="interactive-list">
+    <li class="interactive-list__item">
+      <button class="interactive-list__btn">Числовий</button>
+    </li>
+    <li class="interactive-list__item">
+      <button class="interactive-list__btn">Ігровий</button>
+    </li>
+    <li class="interactive-list__item">
+      <button class="interactive-list__btn">Ознайомчий</button>
+    </li>
+  </ul>
+</div>
+
+    <div class="header-modal">
+  <button class="header-modal__close">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
+      fill="none"
+    >
+      <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black" />
+    </svg>
+  </button>
+  <h2 class="header-modal__title">Привіт!</h2>
+  <p class="header-modal__text">
+    Ви потрапили на сайт інтерактивних ігор та завдань <br />
+    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+    Бажаємо Вам гарно провести час!
+  </p>
+  <div class="header-modal__flex">
+    <label for="#header-modal__input" class="header-modal__label"
+      >Введіть своє ім’я:</label
+    >
+    <input
+      type="text"
+      id="header-modal__input"
+      class="header-modal__input"
+      placeholder="Ваше ім’я..."
+    />
+    <button type="submit" class="header-modal__btn">Зберегти</button>
+  </div>
+</div>
+
+    <div class="footer-modal hidden">
+  <button class="footer-modal__close" type="button">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
+      fill="none"
+    >
+      <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black" />
+    </svg>
+  </button>
+  <h2 class="footer-modal__title">Дякую за підписку!</h2>
+</div>
+
   </body>
 </html>
