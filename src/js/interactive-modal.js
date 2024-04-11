@@ -3,7 +3,7 @@ const interactiveModal = document.querySelector(".interactive-modal");
 const interactiveBackdrop = document.querySelector(".backdrop");
 const birthday = document.querySelector(".birthday");
 const guessNumber = document.querySelector(".guess-number");
-const rockPaperScissors = document.querySelector("rock-paper-scissors");
+const rockPaperScissors = document.querySelector(".rock-paper-scissors");
 const calculator = document.querySelector(".calculator");
 const timeCalculator = document.querySelector(".time-calculator");
 const dino = document.querySelector(".dinosaur");
@@ -16,13 +16,18 @@ const interactiveBtnNumbers = document.querySelector(
 );
 const interactiveBtnGames = document.querySelector(".interactive-btn__games");
 const interactiveBtnNew = document.querySelector(".interactive-btn__new");
+const rockPaperScissorsTitle = document.querySelector(
+  ".rock-paper-scissors__title"
+);
+const teamTitle = document.querySelector(".team__title");
 
 interactiveBtn.addEventListener("click", () => {
   interactiveModal.style.display = "block";
-  interactiveBackdrop.style.display = "block";
+  // interactiveBackdrop.style.display = "block";
 });
 
 interactiveBtnNumbers.addEventListener("click", () => {
+  console.log("Hello");
   biggestNumber.style.display = "block";
   birthday.style.display = "block";
   guessNumber.style.display = "block";
@@ -47,6 +52,7 @@ interactiveBtnGames.addEventListener("click", () => {
   soccer.style.display = "block";
   team.style.display = "none";
   scientists.style.display = "none";
+  rockPaperScissorsTitle.style.border = "none";
 });
 
 interactiveBtnNew.addEventListener("click", () => {
@@ -60,4 +66,5 @@ interactiveBtnNew.addEventListener("click", () => {
   soccer.style.display = "none";
   team.style.display = "block";
   scientists.style.display = "block";
+  teamTitle.style.border = "none";
 });
