@@ -1,11 +1,12 @@
 const guessNumberBtn = document.querySelector(".guess-number__btn");
 const guessNumberResult = document.querySelector(".guess-number__result");
 const computerNumber = Math.round(Math.random() * (10 - 1) + 1);
+const guessNumberInput = document.querySelector(".guess-number__input");
 console.log(computerNumber);
 
 guessNumberBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  const guessNumberInput = document.querySelector(".guess-number__input");
+  guessNumberInput.value = "";
   const personNumber = Number(guessNumberInput.value);
   guessNumberResult.style.opacity = 1;
   if (computerNumber === personNumber) {

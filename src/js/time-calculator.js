@@ -8,6 +8,12 @@ let timeCalculatorResult = 0;
 timeBtn.addEventListener("click", (event) => {
   event.preventDefault();
   const minutes = parseFloat(timeInput.value);
-  timeCalculatorResult = minutes / 60;
-  timeCalculatorResultText.textContent = `${timeCalculatorResult} годин`;
+  timeInput.value = "";
+
+  if (!isNaN(minutes)) {
+    timeCalculatorResult = minutes / 60;
+    timeCalculatorResultText.textContent = `${timeCalculatorResult} годин`;
+  } else {
+    timeCalculatorResultText.textContent = "Будь ласка, введіть дійсне число.";
+  }
 });

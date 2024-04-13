@@ -29,18 +29,20 @@ divide.addEventListener("click", () => {
 equal.addEventListener("click", () => {
   const calculatorFirstNumber = parseFloat(calculatorFirstInput.value);
   const calculatorSecondNumber = parseFloat(calculatorSecondInput.value);
+  calculatorFirstInput.value = "";
+  calculatorSecondInput.value = "";
   if (chosenSymbol === "+") {
     calculatorResult = calculatorFirstNumber + calculatorSecondNumber;
     calculatorResultText.textContent = `${calculatorResult}`;
   } else if (chosenSymbol === "-") {
     calculatorResult = calculatorFirstNumber - calculatorSecondNumber;
-    calculatorResultText.textContent = `Різниця чисел a і b = ${calculatorResult}`;
+    calculatorResultText.textContent = `${calculatorResult}`;
   } else if (chosenSymbol === "*") {
     calculatorResult = calculatorFirstNumber * calculatorSecondNumber;
-    calculatorResultText.textContent = `Добуток чисел a і b = ${calculatorResult}`;
+    calculatorResultText.textContent = `${calculatorResult}`;
   } else if (chosenSymbol === "/") {
     calculatorResult = calculatorFirstNumber / calculatorSecondNumber;
-    calculatorResultText.textContent = `Частка чисел a і b = ${calculatorResult}`;
+    calculatorResultText.textContent = `${calculatorResult}`;
   }
   calculatorResultText.style.color = "fieldtext";
 });

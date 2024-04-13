@@ -67,3 +67,18 @@
   background: #000;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
+
+/* Define animation for opacity */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Define transition for opacity */
+.fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}

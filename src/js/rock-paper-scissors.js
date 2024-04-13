@@ -8,9 +8,11 @@ const playerResultText = document.querySelector(".rock-paper-scissors__player");
 const computerResultText = document.querySelector(
   ".rock-paper-scissors__computer"
 );
+const computerButton = document.querySelector(".rock-paper-scissors__btn");
 
 let playerResult = 0;
 let computerResult = 0;
+let userChoice = null;
 
 function updateScore() {
   playerResultText.textContent = `Ви: ${playerResult}`;
@@ -22,20 +24,7 @@ function computerMove() {
   return moves[Math.floor(Math.random() * moves.length)];
 }
 
-rock.addEventListener("click", () => {
-  playRound("rock");
-});
-
-paper.addEventListener("click", () => {
-  playRound("paper");
-});
-
-scissors.addEventListener("click", () => {
-  playRound("scissors");
-});
-
-function playRound(playerChoice) {
-  const computerChoice = computerMove();
+function playRound(playerChoice, computerChoice) {
   rockPaperScissorsMessage.style.opacity = "1";
   if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
@@ -44,6 +33,7 @@ function playRound(playerChoice) {
   ) {
     playerResult++;
     rockPaperScissorsMessage.textContent = "Ви виграли раунд!";
+    rockPaperScissorsMessage.style.color = "#039900";
   } else if (playerChoice !== computerChoice) {
     computerResult++;
     rockPaperScissorsMessage.textContent = "Комп’ютер виграв раунд!";
@@ -54,3 +44,25 @@ function playRound(playerChoice) {
 
   updateScore();
 }
+
+rock.addEventListener("click", () => {
+  userChoice = "rock";
+});
+
+paper.addEventListener("click", () => {
+  userChoice = "paper";
+});
+
+scissors.addEventListener("click", () => {
+  userChoice = "scissors";
+});
+
+computerButton.addEventListener("click", () => {
+  if (userChoice) {
+    const computerChoice = computerMove();
+    playRound(userChoice, computerChoice);
+    userChoice = null; // Reset user choice after the round
+  } else {
+    alert("Будь ласка, спочатку виберіть елемент.");
+  }
+});

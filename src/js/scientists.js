@@ -28,20 +28,36 @@ const btnBorn19Century = document.querySelector(".born19century");
 btnBorn19Century.addEventListener("click", () => {
   albertName.style.opacity = 1;
   albertAge.style.opacity = 1;
+  albertName.classList.add("fadeIn");
+  albertAge.classList.add("fadeIn");
   marieName.style.opacity = 1;
   marieAge.style.opacity = 1;
+  marieName.classList.add("fadeIn");
+  marieAge.classList.add("fadeIn");
   maxName.style.opacity = 1;
   maxAge.style.opacity = 1;
+  maxName.classList.add("fadeIn");
+  maxAge.classList.add("fadeIn");
   kateName.style.opacity = 1;
   kateAge.style.opacity = 1;
+  kateName.classList.add("fadeIn");
+  kateAge.classList.add("fadeIn");
   adaName.style.opacity = 1;
   adaAge.style.opacity = 1;
+  adaName.classList.add("fadeIn");
+  adaAge.classList.add("fadeIn");
   sarahName.style.opacity = 1;
   sarahAge.style.opacity = 1;
+  sarahName.classList.add("fadeIn");
+  sarahAge.classList.add("fadeIn");
   liseName.style.opacity = 1;
   liseAge.style.opacity = 1;
+  liseName.classList.add("fadeIn");
+  liseAge.classList.add("fadeIn");
   hannaName.style.opacity = 1;
   hannaAge.style.opacity = 1;
+  hannaName.classList.add("fadeIn");
+  hannaAge.classList.add("fadeIn");
 });
 
 const findAlbertAge = document.querySelector(".find-albert-age");
@@ -49,6 +65,8 @@ const findAlbertAge = document.querySelector(".find-albert-age");
 findAlbertAge.addEventListener("click", () => {
   albertName.style.opacity = 1;
   albertAge.style.opacity = 1;
+  albertName.classList.add("fadeIn");
+  albertAge.classList.add("fadeIn");
 });
 
 const findCSurnames = document.querySelector(".find-c-surnames");
@@ -56,8 +74,12 @@ const findCSurnames = document.querySelector(".find-c-surnames");
 findCSurnames.addEventListener("click", () => {
   marieName.style.opacity = 1;
   marieAge.style.opacity = 1;
+  marieName.classList.add("fadeIn");
+  marieAge.classList.add("fadeIn");
   nicolausName.style.opacity = 1;
   nicolausAge.style.opacity = 1;
+  nicolausName.classList.add("fadeIn");
+  nicolausAge.classList.add("fadeIn");
 });
 
 const deleteASurnames = document.querySelector(".delete-a-names");
@@ -65,8 +87,12 @@ const deleteASurnames = document.querySelector(".delete-a-names");
 deleteASurnames.addEventListener("click", () => {
   albertName.style.opacity = 0;
   albertAge.style.opacity = 0;
+  albertName.classList.add("fadeIn");
+  albertAge.classList.add("fadeIn");
   adaName.style.opacity = 0;
   adaAge.style.opacity = 0;
+  adaName.classList.add("fadeIn");
+  adaAge.classList.add("fadeIn");
 });
 
 const longestAndShortestLives = document.querySelector(
@@ -76,9 +102,13 @@ const longestAndShortestLives = document.querySelector(
 longestAndShortestLives.addEventListener("click", () => {
   adaName.style.opacity = 1;
   adaAge.style.opacity = 1;
+  adaName.classList.add("fadeIn");
+  adaAge.classList.add("fadeIn");
   // найкоротше ада
   liseName.style.opacity = 1;
   liseAge.style.opacity = 1;
+  liseName.classList.add("fadeIn");
+  liseAge.classList.add("fadeIn");
   // найдовше ліс
 });
 
@@ -142,12 +172,18 @@ const bornLatest = document.querySelector(".born-latest");
 bornLatest.addEventListener("click", () => {
   kateName.style.opacity = 1;
   kateAge.style.opacity = 1;
+  kateName.classList.add("fadeIn");
+  kateAge.classList.add("fadeIn");
 });
 
 const matchingInitials = document.querySelector(".matching-initials");
 matchingInitials.addEventListener("click", () => {
   hannaName.style.opacity = 1;
   hannaAge.style.opacity = 1;
+  hannaName.classList.add("fadeIn");
+  hannaAge.classList.add("fadeIn");
   galileoName.style.opacity = 1;
   galileoAge.style.opacity = 1;
+  galileoName.classList.add("fadeIn");
+  galileoAge.classList.add("fadeIn");
 });
