@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 
 .header__interactive-btn {
@@ -42,4 +43,20 @@
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+}
+
+.header__light-btn {
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+  margin-left: 51px;
+}
+
+.header__dark-btn {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+  margin-left: 51px;
+  display: none;
 }

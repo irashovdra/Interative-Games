@@ -1,4 +1,7 @@
-
+.dinosaur {
+  position: relative;
+  height: 241px;
+}
 
 .dinosaur__title {
   padding-top: 36px;
@@ -17,4 +20,33 @@
 
 .dinosaur__img {
   margin-bottom: 36px;
+  position: absolute;
+  bottom: 0px;
+  left: 500px;
+  transform: translateY(0);
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.dino__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dinosaur__cactus-img {
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+  transform: translateX(0);
+  transition: transform 4000ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+  animation: cactus-movement 5s infinite;
+}
+
+@keyframes cactus-movement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
 }
