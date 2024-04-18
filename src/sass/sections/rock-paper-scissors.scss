@@ -86,7 +86,13 @@
   margin-left: auto;
 }
 
+.rock-paper-scissors {
+  position: relative;
+}
+
 .rock-paper-scissors__count-flex {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 777px;
 }
