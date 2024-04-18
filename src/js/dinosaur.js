@@ -50,27 +50,29 @@ function startCactusMovement() {
 // КІНЕЦЬ ГРИ
 
 function endGame() {
-      let dinoCoords = {
-        top:
-          e.clientY - dinoCoords.top - dino.clientTop - dino.clientHeight / 2,
-        left:
-          e.clientX - dinoCoords.left - dino.clientLeft - dino.clientWidth / 2,
-      };
-      let cactusCoords = {
-        top:
-          e.clientY -
-          cactusCoords.top -
-          cactus.clientTop -
-          cactus.clientHeight / 2,
-        left:
-          e.clientX -
-          cactusCoords.left -
-          cactus.clientLeft -
-          cactus.clientWidth / 2,
-      };
-  if (dinoCoords === cactusCoords) {
-    isGameEnded === true;
+  let dinoRect = dino.getBoundingClientRect();
+  let cactusRect = cactus.getBoundingClientRect();
+
+  if (
+    dinoRect.right >= cactusRect.left &&
+    dinoRect.left <= cactusRect.right &&
+    dinoRect.bottom >= cactusRect.top &&
+    dinoRect.top <= cactusRect.bottom
+  ) {
+    isGameEnded = true;
+    console.log("Game Over!");
   }
 }
 
 endGame();
+
+function checkGameStatus() {
+  if (!isGameEnded) {
+    endGame();
+    if (!isGameEnded) {
+      requestAnimationFrame(checkGameStatus);
+    }
+  }
+}
+
+checkGameStatus();
