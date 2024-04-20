@@ -2,13 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  // background-color: #fff;
   position: relative;
   padding-bottom: 33px;
 }
 
 .header__interactive-btn {
   background-color: transparent;
+  color: inherit;
 }
 
 .header .container {
@@ -28,11 +29,11 @@
 }
 
 .header-list__link {
-  color: #000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+  color: inherit;
 }
 
 .header__btn {
@@ -40,7 +41,6 @@
 }
 
 .header__text {
-  color: #000;
   text-align: right;
   font-size: 12px;
   font-weight: 400;

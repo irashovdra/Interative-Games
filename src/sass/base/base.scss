@@ -14,7 +14,7 @@ body {
   //   height: 3202px;
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
+  // background: #fff;
   padding-bottom: 36px;
 }
 
@@ -45,4 +45,12 @@ h3 {
 
 .hidden {
   display: none;
+}
+
+body {
+  color: #000;
+}
+
+.text-color {
+  color: #fff;
 }

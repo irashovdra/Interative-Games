@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://tate-t.github.io/interactive-games/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/interactive-games/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "glob": "^8.1.0",
@@ -15,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "sass": "^1.74.1",
     "swiper": "^10.3.1",
     "vite-plugin-full-reload": "^1.0.5",
