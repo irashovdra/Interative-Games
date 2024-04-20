@@ -14,3 +14,21 @@ headerModalBtn.addEventListener("click", () => {
   headerSpan.textContent = `${headerUser}`;
   headerModal.style.display = "none";
 });
+
+// DARK THEME
+
+const lightThemeBtn = document.querySelector(".header__light-btn");
+const darkThemeBtn = document.querySelector(".header__dark-btn");
+const body = document.querySelector("body");
+
+lightThemeBtn.addEventListener("click", () => {
+  body.style.backgroundColor = "#444141";
+  lightThemeBtn.style.display = "none";
+  darkThemeBtn.style.display = "block";
+});
+
+darkThemeBtn.addEventListener("click", () => {
+  body.style.backgroundColor = "#ffffff";
+  lightThemeBtn.style.display = "block";
+  darkThemeBtn.style.display = "none";
+});

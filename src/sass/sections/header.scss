@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  position: relative;
 }
 
 .header__interactive-btn {
@@ -49,14 +50,15 @@
   width: 40px;
   height: 20px;
   background-color: transparent;
-  margin-left: 51px;
+  position: absolute;
+  right: 200px;
 }
 
 .header__dark-btn {
   position: absolute;
+  right: 200px;
   width: 40px;
   height: 20px;
   background-color: transparent;
-  margin-left: 51px;
   display: none;
 }
