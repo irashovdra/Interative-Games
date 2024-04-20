@@ -45,4 +45,5 @@ darkThemeBtn.addEventListener("click", () => {
   lightThemeBtn.style.display = "block";
   darkThemeBtn.style.display = "none";
   links.classList.remove("text-color");
+  dino.style.fill = "#000";
 });
