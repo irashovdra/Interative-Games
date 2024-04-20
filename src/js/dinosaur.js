@@ -1,6 +1,6 @@
 const dino = document.querySelector(".dinosaur__img");
 const cactus = document.querySelector(".dinosaur__cactus-img");
-let isGameStarted = false;
+let isGameStarted = true;
 let isGameEnded = false;
 let dinoCounter = 0;
 
@@ -38,7 +38,8 @@ document.addEventListener("keyup", () => {
 //  РУХ КАКТУСА
 
 function cactusMovement() {
-  cactus.style.transform = "translateX(-1000px)";
+  const windowWidth = window.innerWidth;
+  cactus.style.transform = `translateX(${windowWidth}px)`;
 }
 
 function startCactusMovement() {
@@ -65,14 +66,3 @@ function endGame() {
 }
 
 endGame();
-
-function checkGameStatus() {
-  if (!isGameEnded) {
-    endGame();
-    if (!isGameEnded) {
-      requestAnimationFrame(checkGameStatus);
-    }
-  }
-}
-
-checkGameStatus();

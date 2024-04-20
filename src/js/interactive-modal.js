@@ -53,6 +53,7 @@ interactiveBtnGames.addEventListener("click", () => {
   team.style.display = "none";
   scientists.style.display = "none";
   rockPaperScissorsTitle.style.border = "none";
+  interactiveModal.style.display = "none";
 });
 
 interactiveBtnNew.addEventListener("click", () => {
@@ -67,4 +68,5 @@ interactiveBtnNew.addEventListener("click", () => {
   team.style.display = "block";
   scientists.style.display = "block";
   teamTitle.style.border = "none";
+  interactiveModal.style.display = "none";
 });
