@@ -52,12 +52,28 @@
 
 .slider__btn-forward {
   margin-left: auto;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+.slider__btn-forward-icon {
+  stroke: black;
+}
+
+.slider__btn-forward:hover .slider__btn-forward-icon {
+  stroke-width: 3px;
 }
 
 .slider__btn-backward {
   margin-right: auto;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+.slider__btn-backward-icon {
+  stroke: black;
+}
+
+.slider__btn-backward:hover .slider__btn-backward-icon {
+  stroke-width: 3px;
 }
 
 .slider-list {
