@@ -1,4 +1,4 @@
-import "./js/header-modal.js";
+// import "./js/header-modal.js";
 import "./js/birthday.js";
 import "./js/guess-number.js";
 import "./js/rock-paper-scissors.js";

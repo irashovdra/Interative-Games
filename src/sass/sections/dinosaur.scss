@@ -41,14 +41,14 @@
   animation: cactus-movement 5s infinite, cactus-animation 1s infinite;
 }
 
-@keyframes cactus-movement {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-1000px);
-  }
-}
+// @keyframes cactus-movement {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(-1000px);
+//   }
+// }
 
 @keyframes cactus-animation {
   0% {

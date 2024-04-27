@@ -3,10 +3,16 @@ const cactus = document.querySelector(".dinosaur__cactus-img");
 let isGameStarted = true;
 let isGameEnded = false;
 let dinoCounter = 0;
-
+let cactusCounter = 0;
+cactus.style.transform = `translateX(${cactusCounter}px)`;
+let dinoRect = dino.getBoundingClientRect();
+let cactusRect = cactus.getBoundingClientRect();
+// console.log(dinoRect);
+// console.log(cactusRect);
 function gameStart() {
   isGameStarted = true;
-  startCactusMovement();
+  // startCactusMovement();
+  // cactusMovement();
 }
 
 function dinoJump() {
@@ -38,31 +44,40 @@ document.addEventListener("keyup", () => {
 //  РУХ КАКТУСА
 
 function cactusMovement() {
-  const windowWidth = window.innerWidth;
-  cactus.style.transform = `translateX(${windowWidth}px)`;
+  setInterval(() => {
+    cactusCounter++;
+    cactus.style.right = `${cactusCounter}px`;
+  }, 1);
+  // Коли - 1000 запустити знову
+  // Коли динозаврик внизу і кактус на його місці - game over, відслідкувати через right i dinoCounter
+  console.log(cactusCounter);
 }
+cactusMovement();
+let cactusMovementId;
 
-function startCactusMovement() {
-  if (isGameStarted === true) {
-    setInterval(cactusMovement, 500);
-  }
-}
+// function startCactusMovement() {
+//   if (isGameStarted === true) {
+//     console.log(cactusMovement());
+//     cactusMovementId = setInterval(cactusMovement, 500);
+//   }
+
+//   if (dinoCounter < cactusCounter && dinoCounter < cactusCounter) {
+//     endGame();
+//   }
+
+//   return cactusMovementId;
+// }
 
 // КІНЕЦЬ ГРИ
 
 function endGame() {
-  let dinoRect = dino.getBoundingClientRect();
-  let cactusRect = cactus.getBoundingClientRect();
-
-  if (
-    dinoRect.right >= cactusRect.left &&
-    dinoRect.left <= cactusRect.right &&
-    dinoRect.bottom >= cactusRect.top &&
-    dinoRect.top <= cactusRect.bottom
-  ) {
-    isGameEnded = true;
-    console.log("Game Over!");
-  }
+  // console.log(
+  //   dinoRect.right >= cactusRect.left &&
+  //     dinoRect.left <= cactusRect.right &&
+  //     dinoRect.bottom >= cactusRect.top &&
+  //     dinoRect.top <= cactusRect.bottom
+  // );
+  isGameEnded = true;
+  alert("Game Over!");
+  clearInterval(cactusMovementId);
 }
-
-endGame();
