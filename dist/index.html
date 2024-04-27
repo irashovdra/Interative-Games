@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     
     
-    <script type="module" crossorigin src="/interactive-games/assets/index-7c8f1359.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-d23ff3f3.css">
+    <script type="module" crossorigin src="/interactive-games/assets/index-b2d2dc6e.js"></script>
+    <link rel="stylesheet" href="/interactive-games/assets/index-e07b228e.css">
   </head>
   <body>
     <header class="header">
@@ -393,14 +393,14 @@
     <!-- СЛАЙДЕР -->
     <div class="slider">
       <button type="button" class="slider__btn-backward">
-        <svg
+        <svg class="slider__btn-backward-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="52"
           height="102"
           viewBox="0 0 52 102"
           fill="none"
         >
-          <path d="M51 1L1 51L51 101" stroke="black" />
+          <path d="M51 1L1 51L51 101"  />
         </svg>
       </button>
       <ul class="slider-list">
@@ -434,13 +434,14 @@
       </ul>
       <button type="button" class="slider__btn-forward">
         <svg
+          class="slider__btn-forward-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="52"
           height="102"
           viewBox="0 0 52 102"
           fill="none"
         >
-          <path d="M1 1L51 51L1 101" stroke="black" />
+          <path d="M1 1L51 51L1 101" />
         </svg>
       </button>
     </div>
@@ -452,10 +453,10 @@
       viewBox="0 0 78 3"
       fill="none"
     >
-      <rect class="rect1" width="30" height="3" rx="1.5" fill="#797979" />
+      <rect class="rect1" width="18" height="3" rx="1.5" fill="#797979" />
       <rect
         class="rect2"
-        x="36"
+        x="30"
         width="18"
         height="3"
         rx="1.5"
@@ -526,54 +527,58 @@
         <p class="scientists-list__age hanna-age">1829-1909</p>
       </li>
     </ul>
-    <ul class="scientists-conditions">
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn born19century">
-          Які вчені народилися в 19 ст.
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn find-albert-age">
-          Знайти рік народження Albert Einshtein
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn scientists-alphabet">
-          Відсортувати вчених за алфавітом
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn find-c-surnames">
-          Знайти вчених, прізвища яких починаються на на літеру “С”
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn scientists-sort-by-age">
-          Відсортувати вчених за кількістю прожитих років
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn delete-a-names">
-          Видалити всіх вчених, ім’я яких починається на “А”
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn born-latest">
-          Знайти вченого, який народився найпізніше
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn longest-shortest-lives">
-          Знайти вченого, який прожив найдовше і вченого, <br />який прожив
-          найменше
-        </button>
-      </li>
-      <li class="scientists-conditions__item">
-        <button class="scientists-conditions__btn matching-initials">
-          Знайти вчених, в яких співпадають перші літери імені і прізвища
-        </button>
-      </li>
-    </ul>
+    <div class="conditions">
+      <ul class="scientists-conditions1">
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn born19century">
+            Які вчені народилися в 19 ст.
+          </button>
+        </li>
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn scientists-alphabet">
+            Відсортувати вчених за алфавітом
+          </button>
+        </li>
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn scientists-sort-by-age">
+            Відсортувати вчених за кількістю прожитих років
+          </button>
+        </li>
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn born-latest">
+            Знайти вченого, який народився найпізніше
+          </button>
+        </li>
+      </ul>
+      <ul class="scientists-conditions2">
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn find-albert-age">
+            Знайти рік народження Albert Einshtein
+          </button>
+        </li>
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn find-c-surnames">
+            Знайти вчених, прізвища яких починаються на на літеру “С”
+          </button>
+        </li>
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn delete-a-names">
+            Видалити всіх вчених, ім’я яких починається на “А”
+          </button>
+        </li>
+        <li class="scientists-conditions__item">
+          <button class="scientists-conditions__btn longest-shortest-lives">
+            Знайти вченого, який прожив найдовше і вченого, <br />який прожив
+            найменше
+          </button>
+        </li>
+      </ul>
+    </div>
+    <button
+      class="scientists-conditions__btn conditions-last-btn matching-initials"
+    >
+      Знайти вчених, в яких співпадають перші літери імені і прізвища
+    </button>
   </div>
 </section>
 
