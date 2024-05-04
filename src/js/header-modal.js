@@ -23,8 +23,9 @@ headerModalBtn.addEventListener("click", () => {
 const lightThemeBtn = document.querySelector(".header__light-btn");
 const darkThemeBtn = document.querySelector(".header__dark-btn");
 const body = document.querySelector("body");
-const dino = document.querySelector(".dinosaur__img");
-const cactus = document.querySelector(".dinosaur__cactus-img");
+const dino = document.getElementById("dino");
+const cactus = document.querySelector(".cactus");
+const dinoGame = document.querySelector(".game");
 
 lightThemeBtn.addEventListener("click", () => {
   body.style.backgroundColor = "#444141";
@@ -35,9 +36,10 @@ lightThemeBtn.addEventListener("click", () => {
   lightThemeBtn.style.display = "none";
   darkThemeBtn.style.display = "block";
   headerIcon.style.fill = "#fff";
-  dino.style.fill = "#fff";
-  cactus.style.fill = "#fff";
+  dino.style.backgroundImage = "url(../../images/white-dino.webp)";
+  dinoGame.classList.add("black-bg");
 });
+console.log(dinoGame);
 
 darkThemeBtn.addEventListener("click", () => {
   body.style.backgroundColor = "#ffffff";
@@ -45,5 +47,6 @@ darkThemeBtn.addEventListener("click", () => {
   lightThemeBtn.style.display = "block";
   darkThemeBtn.style.display = "none";
   links.classList.remove("text-color");
-  dino.style.fill = "#000";
+  dino.style.backgroundImage = "url(../../images/trex.png)";
+  dinoGame.classList.remove("black-bg");
 });

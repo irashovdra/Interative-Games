@@ -1,8 +1,10 @@
 const dino = document.getElementById("dino");
-const cactus = document.getElementById("cactus");
+const cactus = document.querySelector(".cactus");
 let isGameStarted = false;
 let isCactusMoving = false;
 let cactusInterval;
+const gameOver = document.querySelector(".game-over");
+const gameOverBtn = document.querySelector(".game-over__btn");
 
 function jump() {
   if (dino.classList != "jump") {
@@ -20,6 +22,7 @@ function startGame() {
     isCactusMoving = true;
     cactusInterval = setInterval(moveCactus, 10);
   }
+  cactus.classList.add("cactus-animation");
 }
 
 function moveCactus() {
@@ -34,9 +37,12 @@ function moveCactus() {
     if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
       clearInterval(cactusInterval); // Зупиняємо рух кактуса
       isCactusMoving = false;
-      alert("Game Over!");
+      gameOver.classList.remove("game-over-hidden");
       isGameStarted = false; // Позначаємо гру як завершену
     }
+  }
+  if (isGameStarted === false) {
+    cactus.classList.remove("cactus-animation");
   }
 }
 
@@ -57,4 +63,8 @@ window.addEventListener("load", function () {
       }
     });
   }
+});
+
+gameOverBtn.addEventListener("click", () => {
+  gameOver.classList.toggle("game-over-hidden");
 });

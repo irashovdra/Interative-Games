@@ -1,8 +1,3 @@
-// .dinosaur {
-//   position: relative;
-//   height: 241px;
-// }
-
 .dinosaur__title {
   padding-top: 36px;
   border-top: 1px solid #000;
@@ -24,13 +19,17 @@
   margin: auto;
 }
 
+.black-bg {
+  background-color: #202124;
+}
+
 #dino {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-image: url(../../images/trex.png);
-  background-size: 50px 50px;
+  background-size: 60px 60px;
   position: relative;
-  top: 150px;
+  top: 140px;
   left: 30px;
 }
 
@@ -60,17 +59,19 @@
   }
 }
 
-#cactus {
-  width: 20px;
-  height: 40px;
+.cactus {
+  width: 30px;
+  height: 50px;
   position: relative;
-  top: 110px;
-  left: 580px;
-
+  top: 90px;
+  left: 570px;
   background-image: url("../../images/cactus.png");
-  background-size: 20px 40px;
+  background-size: 30px 50px;
+  // animation: block 2s infinite linear;
+}
 
-  animation: block 1s infinite linear;
+.cactus-animation {
+  animation: block 2s infinite linear;
 }
 
 @keyframes block {
@@ -79,49 +80,45 @@
   }
 
   100% {
-    left: -20px;
+    left: -10px;
   }
 }
 
-// .dinosaur__img {
-//   margin-bottom: 36px;
-//   position: absolute;
-//   bottom: 0px;
-//   left: 500px;
-//   transform: translateY(0);
-//   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
-// }
+.game-over {
+  width: 350px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 50px 3px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  position: fixed;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-// .dino__flex {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
+.game-over__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: hsl(0, 100%, 58%);
+  margin-bottom: 20px;
+}
 
-// .dinosaur__cactus-img {
-//   position: absolute;
-//   bottom: 40px;
-//   right: 0px;
-//   transform: translateX(0);
-//   transition: transform 4000ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
-//   animation: cactus-movement 5s infinite, cactus-animation 1s infinite;
-// }
+.game-over__btn {
+  border-radius: 20px;
+  background: #000;
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-// // @keyframes cactus-movement {
-// //   0% {
-// //     transform: translateX(0);
-// //   }
-// //   100% {
-// //     transform: translateX(-1000px);
-// //   }
-// // }
-
-// @keyframes cactus-animation {
-//   0% {
-//     fill: #000;
-//   }
-
-//   100% {
-//     fill: #fff;
-//   }
-// }
+.game-over-hidden {
+  display: none;
+  pointer-events: none;
+}
