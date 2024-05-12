@@ -36,7 +36,7 @@ lightThemeBtn.addEventListener("click", () => {
   lightThemeBtn.style.display = "none";
   darkThemeBtn.style.display = "block";
   headerIcon.style.fill = "#fff";
-  dino.style.backgroundImage = "url(../images/white-dino.webp)";
+  dino.style.backgroundImage = "url(./images/white-dino.webp)";
   dinoGame.classList.add("black-bg");
 });
 console.log(dinoGame);
@@ -47,6 +47,6 @@ darkThemeBtn.addEventListener("click", () => {
   lightThemeBtn.style.display = "block";
   darkThemeBtn.style.display = "none";
   links.classList.remove("text-color");
-  dino.style.backgroundImage = "url(../images/trex.png)";
+  dino.style.backgroundImage = "url(./images/trex.png)";
   dinoGame.classList.remove("black-bg");
 });
