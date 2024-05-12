@@ -22,14 +22,29 @@ const liseName = document.querySelector(".lise-name");
 const liseAge = document.querySelector(".lise-age");
 const hannaName = document.querySelector(".hanna-name");
 const hannaAge = document.querySelector(".hanna-age");
+const scientistsNames = document.querySelectorAll(".scientists-list__name");
+const scientistsAges = document.querySelectorAll(".scientists-list__age");
 
 const btnBorn19Century = document.querySelector(".born19century");
 
 btnBorn19Century.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   albertName.style.opacity = 1;
   albertAge.style.opacity = 1;
   albertName.classList.add("fadeIn");
   albertAge.classList.add("fadeIn");
+  // if (albertName.parentNode.classList.contains("albert")) {
+  //   albertName.parentNode.firstElementChild.classList.add(
+  //     "scientists-list__img-active"
+  //   );
+  // }
   marieName.style.opacity = 1;
   marieAge.style.opacity = 1;
   marieName.classList.add("fadeIn");
@@ -63,6 +78,14 @@ btnBorn19Century.addEventListener("click", () => {
 const findAlbertAge = document.querySelector(".find-albert-age");
 
 findAlbertAge.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   albertName.style.opacity = 1;
   albertAge.style.opacity = 1;
   albertName.classList.add("fadeIn");
@@ -72,6 +95,14 @@ findAlbertAge.addEventListener("click", () => {
 const findCSurnames = document.querySelector(".find-c-surnames");
 
 findCSurnames.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   marieName.style.opacity = 1;
   marieAge.style.opacity = 1;
   marieName.classList.add("fadeIn");
@@ -85,6 +116,14 @@ findCSurnames.addEventListener("click", () => {
 const deleteASurnames = document.querySelector(".delete-a-names");
 
 deleteASurnames.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   albertName.style.opacity = 0;
   albertAge.style.opacity = 0;
   albertName.classList.add("fadeIn");
@@ -100,6 +139,14 @@ const longestAndShortestLives = document.querySelector(
 );
 
 longestAndShortestLives.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   adaName.style.opacity = 1;
   adaAge.style.opacity = 1;
   adaName.classList.add("fadeIn");
@@ -116,6 +163,14 @@ const sortByAlphabet = document.querySelector(".scientists-alphabet");
 const scientistsList = document.querySelector(".scientists-list");
 
 sortByAlphabet.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   const scientistsList = document.querySelector(".scientists-list");
   const scientists = Array.from(
     scientistsList.querySelectorAll(".scientists-list__item")
@@ -141,6 +196,14 @@ sortByAlphabet.addEventListener("click", () => {
 const sortByAge = document.querySelector(".scientists-sort-by-age");
 
 sortByAge.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   const scientistsList = document.querySelector(".scientists-list");
   const scientists = Array.from(
     scientistsList.querySelectorAll(".scientists-list__item")
@@ -170,6 +233,14 @@ sortByAge.addEventListener("click", () => {
 
 const bornLatest = document.querySelector(".born-latest");
 bornLatest.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   kateName.style.opacity = 1;
   kateAge.style.opacity = 1;
   kateName.classList.add("fadeIn");
@@ -178,6 +249,14 @@ bornLatest.addEventListener("click", () => {
 
 const matchingInitials = document.querySelector(".matching-initials");
 matchingInitials.addEventListener("click", () => {
+  scientistsNames.forEach((scientistName) => {
+    scientistName.style.opacity = 0;
+    scientistName.classList.remove("fadeIn");
+  });
+  scientistsAges.forEach((scientistAge) => {
+    scientistAge.style.opacity = 0;
+    scientistAge.classList.remove("fadeIn");
+  });
   hannaName.style.opacity = 1;
   hannaAge.style.opacity = 1;
   hannaName.classList.add("fadeIn");

@@ -5,6 +5,9 @@ let isCactusMoving = false;
 let cactusInterval;
 const gameOver = document.querySelector(".game-over");
 const gameOverBtn = document.querySelector(".game-over__btn");
+const dinoCount = document.querySelector(".dino-count");
+let fails = 0;
+dinoCount.textContent = fails;
 
 function jump() {
   if (dino.classList != "jump") {
@@ -67,4 +70,6 @@ window.addEventListener("load", function () {
 
 gameOverBtn.addEventListener("click", () => {
   gameOver.classList.toggle("game-over-hidden");
+  fails++;
+  dinoCount.textContent = fails;
 });

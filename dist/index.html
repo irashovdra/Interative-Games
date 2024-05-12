@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     
     
-    <script type="module" crossorigin src="/interactive-games/assets/index-5e27c21b.js"></script>
-    <link rel="stylesheet" href="/interactive-games/assets/index-2e93018e.css">
+    <script type="module" crossorigin src="/interactive-games/assets/index-ddfea0d0.js"></script>
+    <link rel="stylesheet" href="/interactive-games/assets/index-9ae62cd0.css">
   </head>
   <body>
     <header class="header">
@@ -291,6 +291,7 @@
       <p class="game-over__text">Game Over!</p>
       <button type="button" class="game-over__btn">OK</button>
     </div>
+    <p class="dino-fails">Кількість фейлів: <span class="dino-count"></span></p>
     <!-- <div class="dino-flex">
       <svg
         class="dinosaur__img"
@@ -489,50 +490,110 @@
     <h2 class="scientists__title">Обери вченого/их</h2>
     <ul class="scientists-list">
       <li class="scientists-list__item albert">
+        <img
+          src="/interactive-games/assets/einstein-1dad7ec6.webp"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name albert-name">Albert Einstein</h3>
         <p class="scientists-list__age albert-age">1879-1955</p>
       </li>
       <li class="scientists-list__item isaac">
+        <img
+          src="../images/newton.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name isaac-name">Isaac Newton</h3>
         <p class="scientists-list__age isaac-age">1643-1727</p>
       </li>
       <li class="scientists-list__item galileo">
+        <img
+          src="/interactive-games/assets/galilei-a590731f.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name galileo-name">Galileo Galilei</h3>
         <p class="scientists-list__age galileo-age">1564-1642</p>
       </li>
       <li class="scientists-list__item marie">
+        <img
+          src="/interactive-games/assets/curie-9cfbbc6d.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name marie-name">Marie Curie</h3>
         <p class="scientists-list__age marie-age">1867-1934</p>
       </li>
       <li class="scientists-list__item johannes">
+        <img
+          src="/interactive-games/assets/kepler-0c1906c8.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name johannes-name">Johannes Kepler</h3>
         <p class="scientists-list__age johannes-age">1571-1630</p>
       </li>
       <li class="scientists-list__item nicolaus">
+        <img
+          src="/interactive-games/assets/copernicus-785b28e5.webp"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name nicolaus-name">Nicolaus Copernicus</h3>
         <p class="scientists-list__age nicolaus-age">1473-1543</p>
       </li>
       <li class="scientists-list__item max">
+        <img
+          src="/interactive-games/assets/planck-1e852a4c.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name max-name">Max Planck</h3>
         <p class="scientists-list__age max-age">1858-1947</p>
       </li>
       <li class="scientists-list__item kate">
+        <img
+          src="/interactive-games/assets/blodgett-662c0c39.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name kate-name">Katherine Blodgett</h3>
         <p class="scientists-list__age kate-age">1898-1979</p>
       </li>
       <li class="scientists-list__item ada">
+        <img
+          src="/interactive-games/assets/lovelace-f27de06b.webp"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name ada-name">Ada Lovelace</h3>
         <p class="scientists-list__age ada-age">1815-1852</p>
       </li>
       <li class="scientists-list__item sarah">
+        <img
+          src="/interactive-games/assets/goode-265fa233.webp"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name sarah-name">Sarah E. Goode</h3>
         <p class="scientists-list__age sarah-age">1855-1905</p>
       </li>
       <li class="scientists-list__item lise">
+        <img
+          src="/interactive-games/assets/meinter-b481c914.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name lise-name">Lise Meitner</h3>
         <p class="scientists-list__age lise-age">1878-1968</p>
       </li>
       <li class="scientists-list__item hanna">
+        <img
+          src="/interactive-games/assets/hammarstrom-e7e289e1.jpg"
+          alt="albert"
+          class="scientists-list__img"
+        />
         <h3 class="scientists-list__name hanna-name">Hanna Hammarström</h3>
         <p class="scientists-list__age hanna-age">1829-1909</p>
       </li>
@@ -540,44 +601,65 @@
     <div class="conditions">
       <ul class="scientists-conditions1">
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn born19century">
+          <button
+            type="button"
+            class="scientists-conditions__btn born19century"
+          >
             Які вчені народилися в 19 ст.
           </button>
         </li>
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn scientists-alphabet">
+          <button
+            type="button"
+            class="scientists-conditions__btn scientists-alphabet"
+          >
             Відсортувати вчених за алфавітом
           </button>
         </li>
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn scientists-sort-by-age">
+          <button
+            type="button"
+            class="scientists-conditions__btn scientists-sort-by-age"
+          >
             Відсортувати вчених за кількістю прожитих років
           </button>
         </li>
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn born-latest">
+          <button type="button" class="scientists-conditions__btn born-latest">
             Знайти вченого, який народився найпізніше
           </button>
         </li>
       </ul>
       <ul class="scientists-conditions2">
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn find-albert-age">
+          <button
+            type="button"
+            class="scientists-conditions__btn find-albert-age"
+          >
             Знайти рік народження Albert Einshtein
           </button>
         </li>
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn find-c-surnames">
+          <button
+            type="button"
+            class="scientists-conditions__btn find-c-surnames"
+          >
             Знайти вчених, прізвища яких починаються на на літеру “С”
           </button>
         </li>
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn delete-a-names">
+          <button
+            type="button"
+            class="scientists-conditions__btn delete-a-names"
+          >
             Видалити всіх вчених, ім’я яких починається на “А”
           </button>
         </li>
         <li class="scientists-conditions__item">
-          <button class="scientists-conditions__btn longest-shortest-lives">
+          <button
+            type="button"
+            class="scientists-conditions__btn longest-shortest-lives"
+          >
             Знайти вченого, який прожив найдовше і вченого, <br />який прожив
             найменше
           </button>
@@ -585,6 +667,7 @@
       </ul>
     </div>
     <button
+      type="button"
       class="scientists-conditions__btn conditions-last-btn matching-initials"
     >
       Знайти вчених, в яких співпадають перші літери імені і прізвища

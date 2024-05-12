@@ -8,7 +8,10 @@ birthdayBtn.addEventListener("click", (event) => {
   birthdayResult.style.opacity = 1;
   birthdayInput.value = "";
 
-  if (
+  if (birthdayInput.value === "") {
+    birthdayResult.textContent = "Введіть число!";
+    birthdayResult.style.color = "#900";
+  } else if (
     birthdayYear % 4 === 0 &&
     (birthdayYear % 100 !== 0 || birthdayYear % 400 === 0)
   ) {
