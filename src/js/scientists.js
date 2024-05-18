@@ -24,114 +24,51 @@ const hannaName = document.querySelector(".hanna-name");
 const hannaAge = document.querySelector(".hanna-age");
 const scientistsNames = document.querySelectorAll(".scientists-list__name");
 const scientistsAges = document.querySelectorAll(".scientists-list__age");
+const scientistsItems = document.querySelectorAll(".scientists-list__item");
 
 const btnBorn19Century = document.querySelector(".born19century");
 
 btnBorn19Century.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  albertName.style.opacity = 1;
-  albertAge.style.opacity = 1;
-  albertName.classList.add("fadeIn");
-  albertAge.classList.add("fadeIn");
-  // if (albertName.parentNode.classList.contains("albert")) {
-  //   albertName.parentNode.firstElementChild.classList.add(
-  //     "scientists-list__img-active"
-  //   );
-  // }
-  marieName.style.opacity = 1;
-  marieAge.style.opacity = 1;
-  marieName.classList.add("fadeIn");
-  marieAge.classList.add("fadeIn");
-  maxName.style.opacity = 1;
-  maxAge.style.opacity = 1;
-  maxName.classList.add("fadeIn");
-  maxAge.classList.add("fadeIn");
-  kateName.style.opacity = 1;
-  kateAge.style.opacity = 1;
-  kateName.classList.add("fadeIn");
-  kateAge.classList.add("fadeIn");
-  adaName.style.opacity = 1;
-  adaAge.style.opacity = 1;
-  adaName.classList.add("fadeIn");
-  adaAge.classList.add("fadeIn");
-  sarahName.style.opacity = 1;
-  sarahAge.style.opacity = 1;
-  sarahName.classList.add("fadeIn");
-  sarahAge.classList.add("fadeIn");
-  liseName.style.opacity = 1;
-  liseAge.style.opacity = 1;
-  liseName.classList.add("fadeIn");
-  liseAge.classList.add("fadeIn");
-  hannaName.style.opacity = 1;
-  hannaAge.style.opacity = 1;
-  hannaName.classList.add("fadeIn");
-  hannaAge.classList.add("fadeIn");
+  resetOpacity();
+  setActive([
+    albertName,
+    albertAge,
+    marieName,
+    marieAge,
+    maxName,
+    maxAge,
+    kateName,
+    kateAge,
+    adaName,
+    adaAge,
+    sarahName,
+    sarahAge,
+    liseName,
+    liseAge,
+    hannaName,
+    hannaAge,
+  ]);
 });
 
 const findAlbertAge = document.querySelector(".find-albert-age");
 
 findAlbertAge.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  albertName.style.opacity = 1;
-  albertAge.style.opacity = 1;
-  albertName.classList.add("fadeIn");
-  albertAge.classList.add("fadeIn");
+  resetOpacity();
+  setActive([albertName, albertAge]);
 });
 
 const findCSurnames = document.querySelector(".find-c-surnames");
 
 findCSurnames.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  marieName.style.opacity = 1;
-  marieAge.style.opacity = 1;
-  marieName.classList.add("fadeIn");
-  marieAge.classList.add("fadeIn");
-  nicolausName.style.opacity = 1;
-  nicolausAge.style.opacity = 1;
-  nicolausName.classList.add("fadeIn");
-  nicolausAge.classList.add("fadeIn");
+  resetOpacity();
+  setActive([marieName, marieAge, nicolausName, nicolausAge]);
 });
 
-const deleteASurnames = document.querySelector(".delete-a-names");
+const deleteANames = document.querySelector(".delete-a-names");
 
-deleteASurnames.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  albertName.style.opacity = 0;
-  albertAge.style.opacity = 0;
-  albertName.classList.add("fadeIn");
-  albertAge.classList.add("fadeIn");
-  adaName.style.opacity = 0;
-  adaAge.style.opacity = 0;
-  adaName.classList.add("fadeIn");
-  adaAge.classList.add("fadeIn");
+deleteANames.addEventListener("click", () => {
+  resetOpacity();
+  deleteActive([albertName, albertAge, adaName, adaAge]);
 });
 
 const longestAndShortestLives = document.querySelector(
@@ -139,44 +76,20 @@ const longestAndShortestLives = document.querySelector(
 );
 
 longestAndShortestLives.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  adaName.style.opacity = 1;
-  adaAge.style.opacity = 1;
-  adaName.classList.add("fadeIn");
-  adaAge.classList.add("fadeIn");
-  // найкоротше ада
-  liseName.style.opacity = 1;
-  liseAge.style.opacity = 1;
-  liseName.classList.add("fadeIn");
-  liseAge.classList.add("fadeIn");
-  // найдовше ліс
+  resetOpacity();
+  setActive([
+    liseName,
+    liseAge, // найдовше
+    adaName,
+    adaAge, // найкоротше
+  ]);
 });
 
 const sortByAlphabet = document.querySelector(".scientists-alphabet");
-const scientistsList = document.querySelector(".scientists-list");
 
 sortByAlphabet.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  const scientistsList = document.querySelector(".scientists-list");
-  const scientists = Array.from(
-    scientistsList.querySelectorAll(".scientists-list__item")
-  );
-
-  scientists.sort((a, b) => {
+  resetOpacity();
+  sortScientists((a, b) => {
     const nameA = a
       .querySelector(".scientists-list__name")
       .textContent.toLowerCase();
@@ -185,31 +98,13 @@ sortByAlphabet.addEventListener("click", () => {
       .textContent.toLowerCase();
     return nameA.localeCompare(nameB);
   });
-
-  scientists.forEach((scientist, index) => {
-    scientistsList.appendChild(scientist);
-    scientist.querySelector(".scientists-list__name").style.opacity = 1;
-    scientist.querySelector(".scientists-list__age").style.opacity = 1;
-  });
 });
 
 const sortByAge = document.querySelector(".scientists-sort-by-age");
 
 sortByAge.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  const scientistsList = document.querySelector(".scientists-list");
-  const scientists = Array.from(
-    scientistsList.querySelectorAll(".scientists-list__item")
-  );
-
-  scientists.sort((a, b) => {
+  resetOpacity();
+  sortScientists((a, b) => {
     const yearsA = a
       .querySelector(".scientists-list__age")
       .textContent.split("-")
@@ -220,35 +115,25 @@ sortByAge.addEventListener("click", () => {
       .map(Number);
     const lifespanA = yearsA[1] - yearsA[0];
     const lifespanB = yearsB[1] - yearsB[0];
-
     return lifespanA - lifespanB;
-  });
-
-  scientists.forEach((scientist, index) => {
-    scientistsList.appendChild(scientist);
-    scientist.querySelector(".scientists-list__name").style.opacity = 1;
-    scientist.querySelector(".scientists-list__age").style.opacity = 1;
   });
 });
 
 const bornLatest = document.querySelector(".born-latest");
+
 bornLatest.addEventListener("click", () => {
-  scientistsNames.forEach((scientistName) => {
-    scientistName.style.opacity = 0;
-    scientistName.classList.remove("fadeIn");
-  });
-  scientistsAges.forEach((scientistAge) => {
-    scientistAge.style.opacity = 0;
-    scientistAge.classList.remove("fadeIn");
-  });
-  kateName.style.opacity = 1;
-  kateAge.style.opacity = 1;
-  kateName.classList.add("fadeIn");
-  kateAge.classList.add("fadeIn");
+  resetOpacity();
+  setActive([kateName, kateAge]);
 });
 
 const matchingInitials = document.querySelector(".matching-initials");
+
 matchingInitials.addEventListener("click", () => {
+  resetOpacity();
+  setActive([hannaName, hannaAge, galileoName, galileoAge]);
+});
+
+function resetOpacity() {
   scientistsNames.forEach((scientistName) => {
     scientistName.style.opacity = 0;
     scientistName.classList.remove("fadeIn");
@@ -257,12 +142,45 @@ matchingInitials.addEventListener("click", () => {
     scientistAge.style.opacity = 0;
     scientistAge.classList.remove("fadeIn");
   });
-  hannaName.style.opacity = 1;
-  hannaAge.style.opacity = 1;
-  hannaName.classList.add("fadeIn");
-  hannaAge.classList.add("fadeIn");
-  galileoName.style.opacity = 1;
-  galileoAge.style.opacity = 1;
-  galileoName.classList.add("fadeIn");
-  galileoAge.classList.add("fadeIn");
-});
+  scientistsItems.forEach((item) => {
+    item.classList.remove("active");
+  });
+}
+
+function setActive(elements) {
+  elements.forEach((element) => {
+    element.style.opacity = 1;
+    element.classList.add("fadeIn");
+    element.closest(".scientists-list__item").classList.add("active");
+  });
+}
+
+function deleteActive(elements) {
+  elements.forEach((element) => {
+    element.style.opacity = 0;
+    element.classList.remove("fadeIn");
+    element.closest(".scientists-list__item").classList.remove("active");
+  });
+}
+
+function sortScientists(compareFunction) {
+  const scientistsList = document.querySelector(".scientists-list");
+  const scientists = Array.from(
+    scientistsList.querySelectorAll(".scientists-list__item")
+  );
+
+  scientists.sort(compareFunction);
+
+  scientists.forEach((scientist, index) => {
+    const name = scientist.querySelector(".scientists-list__name");
+    const age = scientist.querySelector(".scientists-list__age");
+    setTimeout(() => {
+      scientistsList.appendChild(scientist);
+      setTimeout(() => {
+        name.style.opacity = 1;
+        age.style.opacity = 1;
+      }, 50); // Add a slight delay for smoother transition start
+      scientist.classList.add("active");
+    }, index * 100); // Adjust the delay as needed for smoother animation
+  });
+}
