@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tate-t.github.io/interactive-games/",
+  "homepage": "https://irashovdra.github.io/Interative-Games/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/interactive-games/",
