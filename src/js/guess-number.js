@@ -9,10 +9,7 @@ guessNumberBtn.addEventListener("click", (event) => {
   guessNumberInput.value = "";
   const personNumber = Number(guessNumberInput.value);
   guessNumberResult.style.opacity = 1;
-  if (guessNumberInput.value === "") {
-    guessNumberResult.textContent = `Введіть число!`;
-    guessNumberResult.style.color = "#900";
-  } else if (computerNumber === personNumber) {
+  if (computerNumber === personNumber) {
     guessNumberResult.textContent = `Вітаю, ви вгадали число! ${computerNumber}`;
   } else {
     guessNumberResult.textContent = `Ви програли, комп’ютер загадав ${computerNumber}`;
