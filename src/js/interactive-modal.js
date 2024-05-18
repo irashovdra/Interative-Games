@@ -20,6 +20,7 @@ const rockPaperScissorsTitle = document.querySelector(
   ".rock-paper-scissors__title"
 );
 const teamTitle = document.querySelector(".team__title");
+const interactiveBtnAll = document.querySelector(".interactive-btn__all");
 
 interactiveBtn.addEventListener("click", () => {
   interactiveModal.style.display = "block";
@@ -68,5 +69,20 @@ interactiveBtnNew.addEventListener("click", () => {
   team.style.display = "block";
   scientists.style.display = "block";
   teamTitle.style.border = "none";
+  interactiveModal.style.display = "none";
+});
+
+interactiveBtnAll.addEventListener("click", () => {
+  console.log("Hello");
+  biggestNumber.style.display = "block";
+  birthday.style.display = "block";
+  guessNumber.style.display = "block";
+  calculator.style.display = "block";
+  timeCalculator.style.display = "block";
+  rockPaperScissors.style.display = "block";
+  dino.style.display = "block";
+  soccer.style.display = "block";
+  team.style.display = "block";
+  scientists.style.display = "block";
   interactiveModal.style.display = "none";
 });
